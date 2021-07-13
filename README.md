@@ -1,1 +1,3 @@
 # XMLServer
+
+Pingdom Custom Check
