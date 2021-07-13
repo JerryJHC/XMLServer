@@ -14,8 +14,5 @@ $prevFileHash = Get-Content $hashpath
 
 if ($prevFileHash -ne $filehash) {
     $filehash | Out-File $hashpath -Force
-    "<pingdom_http_custom_check>
-        <status>OK</status>
-        <response_time>$((Get-Date).ToString("yyyyMMdd"))</response_time>
-    </pingdom_http_custom_check>" | Out-File $counterpath -Force -Encoding utf8
+    "<pingdom_http_custom_check>`n`t<status>OK</status>`n`t<response_time>$((Get-Date).ToString("yyyyMMdd"))</response_time>`n</pingdom_http_custom_check>" | Set-Content -NoNewline -Path $counterpath -Encoding ASCII
 }
