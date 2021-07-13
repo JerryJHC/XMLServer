@@ -12,7 +12,7 @@ $counterpath = Join-Path $basepath "docs\counter.xml"
 $filehash = Get-FileHash $filepath -Algorithm SHA256
 $prevFileHash = Get-Content $hashpath
 
-if ($prevFileHash -ne $filehash) {
-    $filehash | Out-File $hashpath -Force
+if ($prevFileHash -ne $filehash.Hash) {
+    $filehash.Hash | Set-Content -NoNewline -Path $hashpath
     "<pingdom_http_custom_check>`n`t<status>OK</status>`n`t<response_time>$((Get-Date).ToString("yyyyMMdd"))</response_time>`n</pingdom_http_custom_check>" | Set-Content -NoNewline -Path $counterpath -Encoding ASCII
 }
