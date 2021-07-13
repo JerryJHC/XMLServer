@@ -10,5 +10,7 @@ while ($true) {
         Start-Process Powershell (Join-Path $PSScriptRoot "validateFileHash.ps1") -Wait
         Write-Host "End validate"
     }
+    Write-Host "Start Wait $(Get-Date)"
     Start-Sleep -s 240
+    Write-Host "End Wait $(Get-Date)"
 }
