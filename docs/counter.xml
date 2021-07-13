@@ -1,4 +1,4 @@
 <pingdom_http_custom_check>
-    <status>OK</status>
-    <response_time>100</response_time>
+	<status>OK</status>
+	<response_time>20210710</response_time>
 </pingdom_http_custom_check>
