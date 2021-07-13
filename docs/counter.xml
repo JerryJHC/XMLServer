@@ -1,5 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<pingdom_http_custom_check>
-    <status>error</status>
-    <message>unable to reach backend</message>
+﻿<pingdom_http_custom_check>
+	<status>NOT OK</status>
+	<response_time>4.284542219</response_time>
 </pingdom_http_custom_check>
