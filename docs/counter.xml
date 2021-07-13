@@ -1,4 +1,5 @@
-﻿<pingdom_http_custom_check>
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<pingdom_http_custom_check>
     <status>OK</status>
     <response_time>96.777</response_time>
 </pingdom_http_custom_check>
