@@ -1,4 +1,4 @@
-﻿<pingdom_http_custom_check>
-	<status>NOT OK</status>
-	<response_time>4.284542219</response_time>
+<pingdom_http_custom_check>
+    <status>OK</status>
+    <response_time>100</response_time>
 </pingdom_http_custom_check>
