@@ -6,9 +6,7 @@ while ($true) {
     if ( (Get-Random -Minimum 1 -Maximum 10) -lt 5 ) {
         Get-Random | Set-Content -NoNewline -Path $filepath
         Start-Sleep -s 10
-        Write-Host "Ini validate"
-        Start-Process Powershell (Join-Path $PSScriptRoot "validateFileHash.ps1") -Wait
-        Write-Host "End validate"
+        Start-Job -FilePath (Join-Path $PSScriptRoot "validateFileHash.ps1")
     }
     Write-Host "Start Wait $(Get-Date)"
     Start-Sleep -s 240
